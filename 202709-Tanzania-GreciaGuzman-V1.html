@@ -830,6 +830,7 @@
     <button class="nav-btn-l1" onclick="showOption('op1', this)">Deluxe 10 días</button>
     <button class="nav-btn-l1" onclick="showOption('op2', this)">Deluxe 8 días</button>
     <button class="nav-btn-l1" onclick="showOption('tours', this)">Tours Adicionales</button>
+    <button class="nav-btn-l1" onclick="showOption('tips', this)">Recomendaciones y Tips</button>
     <button class="nav-btn-l1" onclick="showOption('tyc', this)">T&amp;C</button>
   </div>
   <!-- Nivel 2: Resumen — sin sub-tabs -->
@@ -838,19 +839,18 @@
   <div id="subnav-tours" class="nav-inner nav-l2" style="display:none"></div>
   <!-- Nivel 2: TyC — sin sub-tabs -->
   <div id="subnav-tyc" class="nav-inner nav-l2" style="display:none"></div>
+  <div id="subnav-tips" class="nav-inner nav-l2" style="display:none"></div>
   <!-- Nivel 2: Sub-tabs Opción 1 -->
   <div id="subnav-op1" class="nav-inner nav-l2">
     <button class="nav-btn active" onclick="showSub('itinerario', this)">Itinerario</button>
     <button class="nav-btn" onclick="showSub('hospedaje', this)">Hospedaje</button>
     <button class="nav-btn" onclick="showSub('costos', this)">Costos</button>
-    <button class="nav-btn" onclick="showSub('esencial', this)">Tips</button>
   </div>
   <!-- Nivel 2: Sub-tabs Opción 2 -->
   <div id="subnav-op2" class="nav-inner nav-l2" style="display:none">
     <button class="nav-btn" onclick="showSub('op2-itinerario', this)">Itinerario</button>
     <button class="nav-btn" onclick="showSub('op2-hospedaje', this)">Hospedaje</button>
     <button class="nav-btn" onclick="showSub('op2-costos', this)">Costos</button>
-    <button class="nav-btn" onclick="showSub('op2-esencial', this)">Tips</button>
   </div>
 </nav>
 
@@ -882,7 +882,9 @@
     <strong>✈️ Vuelos internacionales no incluidos</strong> — La compra de vuelos internacionales es <strong>100% responsabilidad del cliente</strong>. <strong>No están incluidos</strong> los vuelos México – Kilimanjaro ni Zanzíbar – Kilimanjaro. El vuelo doméstico Arusha → Zanzíbar <strong>sí está incluido</strong>.<br><br>
     <strong>Ruta sugerida:</strong><br>
     🛫 <strong>Ida:</strong> MEX → Ámsterdam (AMS) → Kilimanjaro (JRO)<br>
-    🛬 <strong>Regreso:</strong> ZNZ → Ámsterdam (AMS) → MEX
+    🛬 <strong>Regreso:</strong> ZNZ → Ámsterdam (AMS) → MEX<br><br>
+    <strong>🗓️ Compra de vuelos:</strong> se recomienda comprarlos aproximadamente <strong>6 meses antes</strong> del viaje. Costo aproximado: <strong>$50,000 MXN por persona</strong> (referencia a octubre 2026, sujeto a cambios).<br><br>
+    <strong>🏨 Noches adicionales:</strong> si los vuelos no se pueden programar en horarios oportunos, será necesario agregar estadía adicional en Ámsterdam, Kilimanjaro o Zanzíbar. Esto se acomodará una vez que se confirmen los vuelos.
   </div>
 
   <div class="timeline">
@@ -1621,115 +1623,6 @@
 </section>
 
 <!-- ══ TIPS ══════════════════════════════ -->
-<section id="esencial" class="section">
-  <div class="section-header">
-    <div class="section-label">Antes de viajar</div>
-    <div class="section-title">Tips para<br>tu safari</div>
-    <p class="section-sub">Todo lo que necesitas saber para estar bien preparado y aprovechar al máximo cada momento.</p>
-  </div>
-
-  <div class="info-wrap">
-
-    <div class="info-block">
-      <div class="info-block-title">
-        <div class="icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="var(--red-violet)" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        </div>
-        <span>Salud y Vacunas</span>
-      </div>
-      <ul class="info-list">
-        <li>Consulta a tu médico 4–6 semanas antes del viaje para la profilaxis contra malaria</li>
-        <li>Vacuna contra la fiebre amarilla puede ser requerida según tu país de origen</li>
-        <li>Hepatitis A y B, y tifoidea son recomendadas para viajeros</li>
-        <li>Lleva repelente de insectos con DEET al 30–50% para safaris</li>
-        <li>Protector solar de alta protección para días en playa y savana</li>
-      </ul>
-    </div>
-
-    <div class="info-block">
-      <div class="info-block-title">
-        <div class="icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="var(--red-violet)" stroke-width="2.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M3 9h18M3 15h18M15 3v18"/></svg>
-        </div>
-        <span>Qué empacar para el Safari</span>
-      </div>
-      <ul class="info-list">
-        <li>Ropa en tonos neutros: kaki, verde olivo, beige — evita colores brillantes o negro/blanco</li>
-        <li>Capas ligeras — los amaneceres en el Serengeti y Ngorongoro pueden ser fríos</li>
-        <li>Sombrero de ala ancha y lentes de sol de calidad</li>
-        <li>Binoculares para una mejor experiencia de avistamiento</li>
-        <li>Cámara con teleobjetivo y baterías extras / power bank</li>
-        <li>Maletas suaves (duffel bags) — más prácticas en los vehículos de safari</li>
-      </ul>
-    </div>
-
-    <div class="info-block">
-      <div class="info-block-title">
-        <div class="icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="var(--red-violet)" stroke-width="2.5"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 1 8 8c0 5.4-8 14-8 14S4 15.4 4 10a8 8 0 0 1 8-8z"/></svg>
-        </div>
-        <span>Qué empacar para Zanzíbar</span>
-      </div>
-      <ul class="info-list">
-        <li>Ropa ligera y de playa — clima tropical con temperaturas de 25–32°C</li>
-        <li>Al visitar Stone Town o mezquitas, cubre hombros y rodillas por respeto cultural</li>
-        <li>Sandalias cómodas para la arena y zapatos cerrados para explorar el pueblo</li>
-        <li>Snorkel propio si deseas explorar los arrecifes de coral</li>
-      </ul>
-    </div>
-
-    <div class="info-block">
-      <div class="info-block-title">
-        <div class="icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="var(--red-violet)" stroke-width="2.5"><path d="M12 22C6.48 22 2 17.52 2 12S6.48 2 12 2s10 4.48 10 10-4.48 10-10 10zM2.05 13h19.9M2.05 11h19.9M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-        </div>
-        <span>Visa y Documentos</span>
-      </div>
-      <ul class="info-list">
-        <li>Tanzania requiere visa — disponible en línea (e-Visa) en <strong>immigration.go.tz</strong></li>
-        <li>Pasaporte con mínimo 6 meses de vigencia desde la fecha de viaje</li>
-        <li>Certificado de vacuna contra fiebre amarilla si vienes de zona de riesgo</li>
-        <li>Contrata un seguro de viaje que incluya evacuación médica — esencial para safari</li>
-      </ul>
-    </div>
-
-    <div class="info-block">
-      <div class="info-block-title">
-        <div class="icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="var(--red-violet)" stroke-width="2.5"><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
-        </div>
-        <span>Clima y Mejor Época</span>
-      </div>
-      <ul class="info-list">
-        <li>Safari Serengueti: temporada seca (junio–octubre) — mejor visibilidad de fauna, caminos accesibles</li>
-        <li>Ngorongoro: mañanas frías (8–12°C), tardes cálidas (20–25°C)</li>
-        <li>Serengeti: días soleados 25–30°C, noches frescas alrededor de 15°C</li>
-        <li>Zanzíbar: clima tropical todo el año · 26–32°C · Aguas cálidas perfectas para nadar</li>
-      </ul>
-    </div>
-
-    <div class="info-block">
-      <div class="info-block-title">
-        <div class="icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="var(--red-violet)" stroke-width="2.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
-        </div>
-        <span>Dinero y Propinas</span>
-      </div>
-      <ul class="info-list">
-        <li>Moneda: Chelín tanzano (TZS). USD ampliamente aceptados en lodges y hoteles</li>
-        <li>Lleva efectivo en USD para propinas — los cajeros automáticos no son confiables en áreas remotas</li>
-        <li>Propina guía: USD $10–15 por persona al día · Conductor: USD $5–10 por persona al día</li>
-        <li>En Zanzíbar, tarjetas de crédito aceptadas en resort — ten efectivo para compras locales</li>
-      </ul>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- ══════════════════════════════════════════ -->
-
-<!-- ══ RESUMEN ═══════════════════════════ -->
 <section id="resumen" class="section active">
 
   <div class="section-header">
@@ -2003,7 +1896,9 @@
     <strong>✈️ Vuelos internacionales no incluidos</strong> — La compra de vuelos internacionales es <strong>100% responsabilidad del cliente</strong>. <strong>No están incluidos</strong> los vuelos México – Kilimanjaro ni Zanzíbar – Kilimanjaro. El vuelo doméstico Arusha → Zanzíbar <strong>sí está incluido</strong>.<br><br>
     <strong>Ruta sugerida:</strong><br>
     🛫 <strong>Ida:</strong> MEX → Ámsterdam (AMS) → Kilimanjaro (JRO)<br>
-    🛬 <strong>Regreso:</strong> ZNZ → Ámsterdam (AMS) → MEX
+    🛬 <strong>Regreso:</strong> ZNZ → Ámsterdam (AMS) → MEX<br><br>
+    <strong>🗓️ Compra de vuelos:</strong> se recomienda comprarlos aproximadamente <strong>6 meses antes</strong> del viaje. Costo aproximado: <strong>$50,000 MXN por persona</strong> (referencia a octubre 2026, sujeto a cambios).<br><br>
+    <strong>🏨 Noches adicionales:</strong> si los vuelos no se pueden programar en horarios oportunos, será necesario agregar estadía adicional en Ámsterdam, Kilimanjaro o Zanzíbar. Esto se acomodará una vez que se confirmen los vuelos.
   </div>
 
   <div class="timeline">
@@ -2648,48 +2543,107 @@
 </section>
 
 <!-- ══ OP2 TIPS ════════════════════════════ -->
-<section id="op2-esencial" class="section">
+<section id="recomendaciones" class="section">
   <div class="section-header">
     <div class="section-label">Antes de viajar</div>
-    <div class="section-title">Tips para<br>tu safari</div>
-    <p class="section-sub">Todo lo que necesitas saber para estar bien preparado y aprovechar cada momento al máximo.</p>
+    <div class="section-title">Recomendaciones<br>&amp; Tips</div>
+    <p class="section-sub">Vacunas, clima, qué empacar y todo lo que necesitas saber para estar bien preparado — aplica para ambas opciones de viaje.</p>
   </div>
-
   <div class="info-wrap">
-
     <div class="info-block">
       <div class="info-block-title">
         <div class="icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="var(--red-violet)" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
-        <span>Salud y Vacunas</span>
+        <span>Vacunas</span>
       </div>
       <ul class="info-list">
-        <li>Consulta a tu médico 4–6 semanas antes del viaje para la profilaxis contra malaria</li>
-        <li>Vacuna contra la fiebre amarilla puede ser requerida según tu país de origen</li>
-        <li>Hepatitis A y B, y tifoidea son recomendadas para viajeros</li>
-        <li>Lleva repelente de insectos con DEET al 30–50% para safaris</li>
-        <li>Protector solar de alta protección para días en playa y savana</li>
+        <li><span><strong>Fiebre amarilla:</strong> no es obligatoria si viajas desde México con escala en Europa. Tanzania solo exige el certificado si llegas de un país con riesgo de fiebre amarilla o haces una escala prolongada en uno de ellos</span></li>
+        <li><span><strong>Recomendadas:</strong> hepatitis A, fiebre tifoidea y refuerzo de tétanos-difteria</span></li>
+        <li><span><strong>A valorar con tu médico:</strong> hepatitis B, polio, rabia y meningitis</span></li>
+        <li><span><strong>Esquema de rutina al día:</strong> sarampión, influenza y COVID-19</span></li>
+        <li><span><strong>Malaria:</strong> no hay vacuna para viajeros; se previene con medicamento recetado (profilaxis) y repelente</span></li>
+        <li><span>Consulta a tu médico o clínica del viajero unas <strong>6 semanas antes</strong>: algunas vacunas requieren varias dosis. Esta lista es orientativa y no sustituye la valoración médica</span></li>
       </ul>
     </div>
-
+    <div class="info-block">
+      <div class="info-block-title">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--red-violet)" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <span>Salud durante el viaje</span>
+      </div>
+      <ul class="info-list">
+        <li><span>Repelente de insectos con DEET al 30–50%, sobre todo al amanecer y al atardecer</span></li>
+        <li><span>Manga larga y pantalón largo por las tardes y noches</span></li>
+        <li><span>Bebe solo agua embotellada o purificada</span></li>
+        <li><span>Protector solar de alta protección para la sabana y la playa</span></li>
+        <li><span>Lleva tus medicamentos habituales y un botiquín básico (analgésico, antidiarreico, suero oral)</span></li>
+      </ul>
+    </div>
+    <div class="info-block">
+      <div class="info-block-title">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--red-violet)" stroke-width="2.5"><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+        </div>
+        <span>Clima y temperatura</span>
+      </div>
+      <div style="border:1px solid var(--gray-100);border-radius:10px;overflow:hidden;margin:14px 14px 4px;">
+        <div style="display:grid;grid-template-columns:1.3fr 1fr 1fr;border-bottom:1px solid var(--gray-100);">
+          <div style="padding:8px 8px;text-align:center;font-size:10px;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;color:var(--gray-400);border-left:1px solid var(--gray-100);background:var(--gray-50);border-left:none;text-align:left;padding-left:10px;">Septiembre</div>
+          <div style="padding:8px 8px;text-align:center;font-size:10px;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;color:var(--gray-400);border-left:1px solid var(--gray-100);background:var(--gray-50);">Día</div>
+          <div style="padding:8px 8px;text-align:center;font-size:10px;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;color:var(--gray-400);border-left:1px solid var(--gray-100);background:var(--gray-50);">Noche</div>
+        </div>
+        <div style="display:grid;grid-template-columns:1.3fr 1fr 1fr;border-bottom:1px solid var(--gray-50);">
+          <div style="padding:9px 10px;font-size:12px;color:var(--gray-600);">Arusha</div>
+          <div style="padding:9px 8px;text-align:center;font-size:12px;font-weight:500;color:var(--gray-800);border-left:1px solid var(--gray-100);">24–26°C</div>
+          <div style="padding:9px 8px;text-align:center;font-size:12px;font-weight:500;color:var(--gray-800);border-left:1px solid var(--gray-100);">10–14°C</div>
+        </div>
+        <div style="display:grid;grid-template-columns:1.3fr 1fr 1fr;border-bottom:1px solid var(--gray-50);">
+          <div style="padding:9px 10px;font-size:12px;color:var(--gray-600);">Lago Manyara</div>
+          <div style="padding:9px 8px;text-align:center;font-size:12px;font-weight:500;color:var(--gray-800);border-left:1px solid var(--gray-100);">26–29°C</div>
+          <div style="padding:9px 8px;text-align:center;font-size:12px;font-weight:500;color:var(--gray-800);border-left:1px solid var(--gray-100);">15–17°C</div>
+        </div>
+        <div style="display:grid;grid-template-columns:1.3fr 1fr 1fr;border-bottom:1px solid var(--gray-50);">
+          <div style="padding:9px 10px;font-size:12px;color:var(--gray-600);">Serengeti</div>
+          <div style="padding:9px 8px;text-align:center;font-size:12px;font-weight:500;color:var(--gray-800);border-left:1px solid var(--gray-100);">27–29°C</div>
+          <div style="padding:9px 8px;text-align:center;font-size:12px;font-weight:500;color:var(--gray-800);border-left:1px solid var(--gray-100);">14–16°C</div>
+        </div>
+        <div style="display:grid;grid-template-columns:1.3fr 1fr 1fr;border-bottom:1px solid var(--gray-50);">
+          <div style="padding:9px 10px;font-size:12px;color:var(--gray-600);">Ngorongoro (borde del cráter)</div>
+          <div style="padding:9px 8px;text-align:center;font-size:12px;font-weight:500;color:var(--gray-800);border-left:1px solid var(--gray-100);">19–21°C</div>
+          <div style="padding:9px 8px;text-align:center;font-size:12px;font-weight:500;color:var(--gray-800);border-left:1px solid var(--gray-100);">6–10°C</div>
+        </div>
+        <div style="display:grid;grid-template-columns:1.3fr 1fr 1fr;">
+          <div style="padding:9px 10px;font-size:12px;color:var(--gray-600);">Zanzíbar</div>
+          <div style="padding:9px 8px;text-align:center;font-size:12px;font-weight:500;color:var(--gray-800);border-left:1px solid var(--gray-100);">29–31°C</div>
+          <div style="padding:9px 8px;text-align:center;font-size:12px;font-weight:500;color:var(--gray-800);border-left:1px solid var(--gray-100);">20–22°C</div>
+        </div>
+      </div>
+      <ul class="info-list">
+        <li><span>Septiembre es <strong>temporada seca</strong>: casi sin lluvia, cielos despejados y la mejor visibilidad de fauna</span></li>
+        <li><span>Las mañanas y noches son frías en el safari, sobre todo en el borde del cráter de Ngorongoro — lleva una chamarra abrigadora</span></li>
+        <li><span>Ambiente seco y con polvo en los caminos del Serengeti</span></li>
+        <li><span>Zanzíbar: cálido y soleado, con el mar alrededor de 26°C</span></li>
+        <li><span>Temperaturas promedio aproximadas; pueden variar</span></li>
+      </ul>
+    </div>
     <div class="info-block">
       <div class="info-block-title">
         <div class="icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="var(--red-violet)" stroke-width="2.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M3 9h18M3 15h18M15 3v18"/></svg>
         </div>
-        <span>Qué empacar para el Safari</span>
+        <span>Qué empacar para el safari</span>
       </div>
       <ul class="info-list">
-        <li>Ropa en tonos neutros: kaki, verde olivo, beige — evita colores brillantes o negro/blanco</li>
-        <li>Capas ligeras — los amaneceres en Serengeti y Ngorongoro pueden ser fríos</li>
-        <li>Sombrero de ala ancha y lentes de sol de calidad</li>
-        <li>Binoculares para una mejor experiencia de avistamiento</li>
-        <li>Cámara con teleobjetivo y baterías extras / power bank</li>
-        <li>Maletas suaves (duffel bags) — más prácticas en los vehículos de safari</li>
+        <li><span>Ropa en tonos neutros: kaki, verde olivo, beige — evita colores brillantes o negro/blanco</span></li>
+        <li><span>Capas ligeras más una chamarra o suéter abrigador para amaneceres y noches</span></li>
+        <li><span>Sombrero de ala ancha y lentes de sol de calidad</span></li>
+        <li><span>Binoculares para una mejor experiencia de avistamiento</span></li>
+        <li><span>Cámara con teleobjetivo y baterías extras / power bank</span></li>
+        <li><span>Maletas suaves (duffel bags) — más prácticas en los vehículos de safari</span></li>
       </ul>
     </div>
-
     <div class="info-block">
       <div class="info-block-title">
         <div class="icon">
@@ -2698,47 +2652,56 @@
         <span>Qué empacar para Zanzíbar</span>
       </div>
       <ul class="info-list">
-        <li>Ropa ligera y de playa — clima tropical con temperaturas de 25–32°C</li>
-        <li>Al visitar Stone Town o mezquitas, cubre hombros y rodillas por respeto cultural</li>
-        <li>Sandalias cómodas para la arena y zapatos cerrados para explorar el pueblo</li>
-        <li>Snorkel propio si deseas explorar los arrecifes de coral</li>
+        <li><span>Ropa ligera y de playa</span></li>
+        <li><span>Al visitar Stone Town o mezquitas, cubre hombros y rodillas por respeto cultural</span></li>
+        <li><span>Sandalias cómodas para la arena y zapatos cerrados para explorar el pueblo</span></li>
+        <li><span>Snorkel propio si deseas explorar los arrecifes de coral</span></li>
       </ul>
     </div>
-
     <div class="info-block">
       <div class="info-block-title">
         <div class="icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="var(--red-violet)" stroke-width="2.5"><path d="M12 22C6.48 22 2 17.52 2 12S6.48 2 12 2s10 4.48 10 10-4.48 10-10 10zM2.05 13h19.9M2.05 11h19.9M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
         </div>
-        <span>Visa y Documentos</span>
+        <span>Visa, documentos y seguro</span>
       </div>
       <ul class="info-list">
-        <li>Tanzania requiere visa — disponible en línea (e-Visa) en <strong>immigration.go.tz</strong></li>
-        <li>Pasaporte con mínimo 6 meses de vigencia desde la fecha de viaje</li>
-        <li>Certificado de vacuna contra fiebre amarilla si vienes de zona de riesgo</li>
-        <li>Contrata un seguro de viaje que incluya evacuación médica — esencial para safari</li>
+        <li><span>Tanzania requiere visa — disponible en línea (e-Visa) en <strong>immigration.go.tz</strong></span></li>
+        <li><span>Pasaporte con mínimo 6 meses de vigencia desde la fecha de viaje</span></li>
+        <li><span><strong>Seguro obligatorio de entrada:</strong> desde el 1 de octubre de 2026 Tanzania exige un seguro de viaje gubernamental de USD $44 por adulto (USD $22 de 3 a 17 años), que se compra en línea antes de viajar. Zanzíbar tiene el suyo por el mismo costo; confirmaremos antes del viaje si una sola póliza cubre ambos</span></li>
+        <li><span>Además, contrata un seguro de viaje privado que incluya evacuación médica — esencial para safari</span></li>
       </ul>
     </div>
-
     <div class="info-block">
       <div class="info-block-title">
         <div class="icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="var(--red-violet)" stroke-width="2.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
         </div>
-        <span>Dinero y Propinas</span>
+        <span>Dinero y propinas</span>
       </div>
       <ul class="info-list">
-        <li>Moneda: Chelín tanzano (TZS). USD ampliamente aceptados en lodges y hoteles</li>
-        <li>Lleva efectivo en USD para propinas — cajeros ATM no confiables en zonas remotas</li>
-        <li>Propina guía: USD $10–15 por persona/día · Conductor: USD $5–10 por persona/día</li>
-        <li>En Zanzíbar, tarjetas de crédito aceptadas en resort — ten efectivo para compras locales</li>
+        <li><span>Moneda: chelín tanzano (TZS). Los USD son ampliamente aceptados en lodges y hoteles</span></li>
+        <li><span>Lleva efectivo en USD para propinas — los cajeros automáticos no son confiables en áreas remotas</span></li>
+        <li><span>Propina sugerida: USD $10 por persona por día</span></li>
+        <li><span>En Zanzíbar, tarjetas de crédito aceptadas en el resort — ten efectivo para compras locales</span></li>
       </ul>
     </div>
-
+    <div class="info-block">
+      <div class="info-block-title">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--red-violet)" stroke-width="2.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M3 9h18M3 15h18M15 3v18"/></svg>
+        </div>
+        <span>Electricidad y conectividad</span>
+      </div>
+      <ul class="info-list">
+        <li><span>Enchufes tipo G (británico, tres clavijas rectangulares) y tipo D · 230 V — lleva un adaptador universal</span></li>
+        <li><span>El WiFi en lodges y campamentos suele ser limitado o solo en áreas comunes</span></li>
+        <li><span>Lleva power bank: los días de safari son largos y fuera del vehículo no siempre hay dónde cargar</span></li>
+      </ul>
+    </div>
   </div>
 </section>
 
-<!-- ══ T&C GLOBAL ════════════════════════ -->
 <section id="global-tyc" class="section">
   <div class="section-header">
     <div class="section-label">Transparencia</div>
@@ -2801,7 +2764,7 @@
     <div class="tyc-item">
       <div class="tyc-num">08 · Vuelos internacionales</div>
       <div class="tyc-title">Responsabilidad del cliente</div>
-      <div class="tyc-text">Los vuelos internacionales no están incluidos. Su compra, coordinación de horarios y posibles cambios son responsabilidad exclusiva del cliente. La agencia puede orientar pero no gestiona boletos internacionales.</div>
+      <div class="tyc-text">Los vuelos internacionales no están incluidos. Su compra, coordinación de horarios y posibles cambios son responsabilidad exclusiva del cliente. La agencia puede orientar pero no gestiona boletos internacionales. Se recomienda comprarlos aproximadamente <strong>6 meses antes</strong> del viaje; el costo aproximado es de <strong>$50,000 MXN por persona</strong> (referencia a octubre 2026, sujeto a cambios). Si los vuelos no se pueden programar en horarios oportunos, será necesario agregar estadía adicional en Ámsterdam, Kilimanjaro o Zanzíbar, lo cual se acomodará una vez confirmados los vuelos.</div>
     </div>
 
     <div class="tyc-item">
@@ -2870,6 +2833,10 @@
     }
     if (optionId === 'tours') {
       document.getElementById('tours-adicionales').classList.add('active');
+      return;
+    }
+    if (optionId === 'tips') {
+      document.getElementById('recomendaciones').classList.add('active');
       return;
     }
     if (optionId === 'tyc') {
